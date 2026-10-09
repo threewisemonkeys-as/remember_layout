@@ -68,5 +68,3 @@ dist/Remember.app/Contents/MacOS/Remember --ui-smoke-test --preview-output "$PWD
 For development, `--data-directory /absolute/path` stores layouts in that directory instead of Application Support.
 
 The core checks cover display identity, coordinate conversion, resolution scaling, laptop maximization, app/window matching, closed-app retention, off-screen recovery, stale captures during display transitions, dragging debounce, persistence, and invalid data. The physical unplug/replug workflow needs verification with your monitors after granting Accessibility access.
-
-In this development workspace, all 18 checks pass and the release bundle's code signature verifies. GUI launch verification was blocked by the workspace's restricted access to the macOS GUI session; the app still needs a first launch and physical monitor test outside that restricted session.
