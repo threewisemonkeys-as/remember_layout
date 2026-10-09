@@ -2,6 +2,18 @@
 
 A native macOS menu bar app that remembers window layouts for each monitor setup. Arrange your apps on your work monitor, disconnect, then reconnect to return to the same layout. On the built-in screen, windows fill the usable area by default.
 
+## Build the app
+
+Requires macOS 13+ and Swift 5.9+ (Xcode or Command Line Tools: `xcode-select --install`).
+
+```sh
+git clone https://github.com/threewisemonkeys-as/remember_layout.git
+cd remember_layout
+./scripts/build-app.sh
+```
+
+This builds `dist/Remember.app` (ad-hoc signed for your Mac) and `dist/Remember.zip`. See [Build and verify](#build-and-verify) for tests and diagnostics.
+
 ## Use the app
 
 1. Open `dist/Remember.app`. You can move it to Applications first if you prefer.
